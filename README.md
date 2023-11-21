@@ -1,5 +1,5 @@
 # Ex-01-Simple-Web-Server
-## Date:
+Name : VISHAL.S REFERENCE NUMBER: 23013753 DEPARTMENT: AIML
 
 ## AIM:
 To develop a simple webserver to serve html pages.
@@ -21,9 +21,42 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
+from http.server import HTTPServer, BaseHTTPRequestHandler
 
+ content ="""
+
+ <html>
+
+ <head>
+
+ </head>
+
+ <body>
+
+ <h1>Welcome</h1>
+
+ </body>
+
+ </html>
+
+class HelloHandler(BaseHTTPRequestHandler):
+    def do_ GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.end_headers()
+        self.wfile.write(content.encode())
+
+
+
+
+server address = ('', 80) 
+
+httpd = HTTPServer (server_address, HelloHandler)
+
+httpd.serve_forever()
 
 ## OUTPUT:
+![Alt text](image.png)
 
 
 ## RESULT:
