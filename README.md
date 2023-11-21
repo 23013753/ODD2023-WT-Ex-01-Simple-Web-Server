@@ -23,9 +23,9 @@ Testing the webserver.
 ## PROGRAM:
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
- content =
+ content ="""
 
- <html>
+     <html>
 
        <head>
 
@@ -37,9 +37,8 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 
        </body>
 
- </html>
-
-class HelloHandler(BaseHTTPRequestHandler):
+     </html>
+    class HelloHandler(BaseHTTPRequestHandler):
  
     def do_ GET(self):
         self.send_response(200)
