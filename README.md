@@ -23,26 +23,27 @@ Testing the webserver.
 ## PROGRAM:
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
- content ="""
+ content =
 
  <html>
 
- <head>
+       <head>
 
- </head>
+       </head>
 
- <body>
+       <body>
 
- <h1>Welcome</h1>
+            <h1>Welcome</h1>
 
- </body>
+       </body>
 
  </html>
 
 class HelloHandler(BaseHTTPRequestHandler):
+ 
     def do_ GET(self):
         self.send_response(200)
-        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.send_header('Content-type', 'text/html;charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
 
