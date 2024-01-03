@@ -56,7 +56,8 @@ httpd = HTTPServer (server_address, HelloHandler)
 httpd.serve_forever()
 
 ## OUTPUT:
-![Alt text](image.png)
+![image](https://github.com/23013753/ODD2023-WT-Ex-01-Simple-Web-Server/assets/145634121/4a1b0c6b-5e55-4f17-831a-c9a2212f8280)
+
 
 
 ## RESULT:
